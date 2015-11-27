@@ -1,0 +1,87 @@
+MSP430 C/C++ Optimizer                  v4.3.3
+Build Number 1OFOQ-KDADEMDK-RTARQ-WAR-ZACIF_U_T_T
+
+		======File-level Analysis Summary======
+
+
+extern void display_all_off() is called from 2 sites in this file.
+    It appears to be inlineable (size = 18 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void display_all_on() is called from 1 sites in this file.
+    It appears to be inlineable (size = 18 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+extern void test_mode() is called from 0 sites in this file.
+    It appears to be inlineable (size = 243 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_all_on() (1 times)
+	bmp_as_stop() (1 times)
+	int_to_array() (2 times)
+	bmp_as_get_data() (1 times)
+	bmp_as_start() (1 times)
+	Timer0_A4_Delay() (5 times)
+	Timer0_Start() (1 times)
+	display_all_off() (2 times)
+	__no_operation() (3 times)
+	__bis_SR_register() (3 times)
+	display_symbol() (11 times)
+	display_chars() (4 times)
+	Timer0_Stop() (2 times)
+
+
+These functions may be recursive:
+	test_mode()
+
+Making this function inlineable: display_all_off()
+
+Making this function inlineable: display_all_on()
+
+These external functions are called but not defined here:
+	Timer0_Stop()
+	display_chars()
+	display_symbol()
+	__bis_SR_register()
+	__no_operation()
+	Timer0_Start()
+	Timer0_A4_Delay()
+	bmp_as_start()
+	bmp_as_get_data()
+	int_to_array()
+	bmp_as_stop()
+
+
+		======= End file-level Analysis =======
+
+
+==============================================================================
+
+extern void display_all_off() is called from 2 sites in this file.
+    It appears to be inlineable (size = 18 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void display_all_on() is called from 1 sites in this file.
+    It appears to be inlineable (size = 18 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	<NONE>
+
+==============================================================================
+
+extern void test_mode() is called from 0 sites in this file.
+    It appears to be inlineable (size = 243 units)
+    It has 3 non-trivial scope blocks nested 3 deep.
+    It calls these functions:
+	display_all_off() (2 times)
+	display_all_on() (1 times)
+
+== END OF INFO OUTPUT==
